@@ -1,9 +1,8 @@
 // Initialize check box
 let noRatingCheckBox = document.getElementById("noRating");
 chrome.storage.sync.get("noRating", ({ noRating }) => {
-  noRating.checked = noRating;
+  noRatingCheckBox.checked = noRating;
 });
-
 
 // set the storage
 noRatingCheckBox.addEventListener("click", async () => {
